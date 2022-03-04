@@ -1,8 +1,8 @@
 //node modules
 
-const inquruer = require("inquirer");
+const inquirer = require("inquirer");
 const fs = require("fs");
-const generatTeam = require("./src/page-template");
+const generateTeam = require("./src/page-template");
 
 //lib modules
 const Engineer = require("./lib/Engineer")
