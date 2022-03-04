@@ -1,0 +1,29 @@
+{
+  "name": "the-dream-team-generator",
+  "version": "1.0.0",
+  "description": "Markdown Team Generator",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "node run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yutthana00/The-dream-team-generator.git"
+  },
+  "keywords": [
+    "Team",
+    "Generator",
+    "npm",
+    "tests",
+    "markdown"
+  ],
+  "author": "Yutthana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yutthana00/The-dream-team-generator/issues"
+  },
+  "homepage": "https://github.com/Yutthana00/The-dream-team-generator#readme"
+}
