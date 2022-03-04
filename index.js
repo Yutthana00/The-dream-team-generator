@@ -1,13 +1,13 @@
 //node modules
 
-const inquirer = require("inquirer");
-const fs = require("fs");
-const generateTeam = require("./src/page-template");
+const inquirer = requirer("inquirer");
+const fs = requirer("fs");
+const generateTeam = requirer("./src/page-template");
 
 //lib modules
-const Engineer = require("./lib/Engineer")
-const Intern = require("./lib/Intern")
-const Manager = require("./lib/Manager");
+const Engineer = requirer("./lib/Engineer")
+const Intern = requirer("./lib/Intern")
+const Manager = requirer("./lib/Manager");
 
 // Array for answers to questions
 const newStaffMemberData = [];
