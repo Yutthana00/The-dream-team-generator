@@ -16,37 +16,37 @@ const questions = async () => {
     const answers = await inquirer
     .prompt([
         {
-            type:"input",
-            message:"What is your name?",
-            name:"name",
+            type: "input",
+            message: "What is your name?",
+            name: "name",
         },
         {
-            type:"input",
-            message:"What is your ID",
-            name:"id",
+            type: "input",
+            message: "What is your ID",
+            name: "id",
         },
         {
-            type:"input",
-            message:"What is your email",
-            name:"email",
+            type: "input",
+            message: "What is your email",
+            name: "email",
         },
         {
-            type:"list",
-            message:"What is your role? ",
-            name:"role",
-            choices:["Engineer", "Intern", "Manger"], 
+            type: "list",
+            message: "What is your role? ",
+            name: "role",
+            choices: ["Engineer", "Intern", "Manger"], 
         },
     ])
 
 // log answers to corresponding question:
     //If manager is selected:
-    if(answers.role === "Manager") {
+    if (answers.role === "Manager") {
         const managerAns = await inquirer
-            .prompt([
+        .prompt([
                 {
-                    type:"input",
-                    message:"What is your office number?",
-                    name:"office number",
+                    type: "input",
+                    message: "What is your office number?",
+                    name: "officeNumber",
                 },
             ])
             const newManager = new Manager(
@@ -63,8 +63,8 @@ const questions = async () => {
         .prompt([
             {
                 type:"input",
-                messages:"What is your Github UserName?",
-                name:"github", 
+                message:"What is your Github UserName?",
+                name:"Github", 
             }
         ])
         const newEngineer = new Engineer(
@@ -98,7 +98,7 @@ const questions = async () => {
 }; //End of question function.
 
 async function promptQuestions() {
-await questions()
+    await questions()
     
 
 const addMemberAns = await inquirer
@@ -112,7 +112,7 @@ const addMemberAns = await inquirer
     ])
 
     if (addMemberAns.addMember === 'Add a new member') {
-    return promptQuestions()
+        return promptQuestions()
     }
     return createTeam();
 }  
