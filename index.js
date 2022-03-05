@@ -120,7 +120,7 @@ async function promptQuestions() {
   promptQuestions();
   
 function createTeam () {
-    console.log("new staff", newStaffMemberData)
+    console.log("new guy", newStaffMemberData)
     fs.writeFileSync(
         "./dist/index.html",
         generateTeam(newStaffMemberData),
