@@ -29,3 +29,19 @@ For users to able to delpoy this app, they will need to install; <h3>npm init, n
 <br>
 
 <img width="873" alt="Screenshot 2022-03-05 at 22 30 16" src="https://user-images.githubusercontent.com/95193763/156901885-15f7604f-b13b-4d66-9e05-05090a3a3c77.png">
+
+<br>
+
+Screen shot of Index.html created by the terminal:
+
+<br>
+
+<img width="1527" alt="Screenshot 2022-03-05 at 22 38 48" src="https://user-images.githubusercontent.com/95193763/156902052-33b6a149-9dfd-4314-888e-08986910ab3c.png">
+
+<br>
+
+Screen shot of Style.CSS to style the HTML page:
+
+<br>
+
+<img width="895" alt="Screenshot 2022-03-05 at 22 39 14" src="https://user-images.githubusercontent.com/95193763/156902071-563737af-29be-4279-b54f-2246469649ec.png">
