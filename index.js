@@ -1,13 +1,12 @@
 //node modules
-
-const inquirer = requirer("inquirer");
-const fs = requirer("fs");
-const generateTeam = requirer("./src/page-template");
+const inquirer = require("inquirer");
+const fs = require("fs");
+const generateTeam = require("./src/page-template.js");
 
 //lib modules
-const Engineer = requirer("./lib/Engineer")
-const Intern = requirer("./lib/Intern")
-const Manager = requirer("./lib/Manager");
+const Engineer = require("./lib/Engineer"); 
+const Intern = require("./lib/Intern");
+const Manager = require("./lib/Manager");
 
 // Array for answers to questions
 const newStaffMemberData = [];
@@ -48,7 +47,7 @@ const questions = async () => {
                     type:"input",
                     message:"What is your office number?",
                     name:"office number",
-                }
+                },
             ])
             const newManager = new Manager(
                 answers.name,
@@ -77,7 +76,7 @@ const questions = async () => {
         newStaffMemberData.push(newEngineer);
     
      //If Intern is selected:
-    }else if (answers.role === "Intern") {
+    } else if (answers.role === "Intern") {
         const internAns = await inquirer
         .prompt([
             {
@@ -99,32 +98,32 @@ const questions = async () => {
 }; //End of question function.
 
 async function promptQuestions() {
-    await questions()
-      
+await questions()
     
-    const addMemberAns = await inquirer
-      .prompt([
+
+const addMemberAns = await inquirer
+    .prompt([
         {
-          name:'addMember',
-          type: 'list',
-          choices: ['Add a new member', 'Create team'],
-          message: "What would you like to do next?"
+            name:'addMember',
+            type: 'list',
+            choices: ['Add a new member', 'Create team'],
+            message: "What would you like to do next?"
         }
-      ])
-  
-      if (addMemberAns.addMember === 'Add a new member') {
-        return promptQuestions()
-      }
-      return createTeam();
-  }  
+    ])
+
+    if (addMemberAns.addMember === 'Add a new member') {
+    return promptQuestions()
+    }
+    return createTeam();
+}  
   
   promptQuestions();
   
-  function createTeam () {
+function createTeam () {
     console.log("new staff", newStaffMemberData)
     fs.writeFileSync(
-      "./output/index.html",
-      generateTeam(newStaffMemberData),
-      "utf-8"
+        "./dist/index.html",
+        generateTeam(newStaffMemberData),
+        "utf-8"
     );
   }
