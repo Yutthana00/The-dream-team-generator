@@ -101,15 +101,15 @@ async function promptQuestions() {
     await questions()
     
 
-const addMemberAns = await inquirer
-    .prompt([
-        {
-            name:'addMember',
-            type: 'list',
-            choices: ['Add a new member', 'Create team'],
-            message: "What would you like to do next?"
-        }
-    ])
+    const addMemberAns = await inquirer
+        .prompt([
+            {
+                name:'addMember',
+                type: 'list',
+                choices: ['Add a new member', 'Create team'],
+                message: "What would you like to do next?"
+            }
+        ])
 
     if (addMemberAns.addMember === 'Add a new member') {
         return promptQuestions()
