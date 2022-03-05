@@ -1,24 +1,28 @@
 {
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  },
   "name": "the-dream-team-generator",
+  "description": "Quick team generator",
   "version": "1.0.0",
-  "description": "Markdown Team Generator",
   "main": "index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "test": "node run test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Yutthana00/The-dream-team-generator.git"
   },
   "keywords": [
-    "Team",
-    "Generator",
+    "inquirer",
     "npm",
-    "tests",
-    "markdown"
+    "node",
+    "team",
+    "generation",
+    "tests"
   ],
   "author": "Yutthana",
   "license": "ISC",
@@ -26,8 +30,7 @@
     "url": "https://github.com/Yutthana00/The-dream-team-generator/issues"
   },
   "homepage": "https://github.com/Yutthana00/The-dream-team-generator#readme",
-  "dependencies": {
-    "inquire": "^0.4.8",
-    "inquirer": "^8.2.0"
+  "devDependencies": {
+    "jest": "^27.5.1"
   }
 }

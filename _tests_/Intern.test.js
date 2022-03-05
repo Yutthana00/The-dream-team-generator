@@ -15,5 +15,5 @@ test("getRole() should return \"Intern\"", () => {
 test("Can get university via getUniversity()", () => {
         const testValue = "UOB";
     const e = new Intern("bob", 1, "test@test.com", testValue);
-    expect(e.university()).toBe(testValue);
+    expect(e.getUniversity()).toBe(testValue);
 });
